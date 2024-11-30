@@ -1,0 +1,383 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+body{
+    background-color: rgb(51, 51, 51);
+    
+}
+.box{
+    background: linear-gradient(rgba(30,30,30,0.7),rgba(30,30,30,0.7)),url("https://images.unsplash.com/photo-1480506132288-68f7705954bd?q=80&w=1840&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.box .logoo{
+    width:75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+}
+
+
+header{
+    width: 90%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    width: 70px;
+    height: 70px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul li{
+    margin: 0 50px;
+}
+header ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+}
+header ul li a:hover{
+    border-radius: 10px;
+    background-color: rgb(247, 121, 211);
+    color: black;
+}
+
+
+@media(max-width:768px){
+    header{
+        flex-direction: column;
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+    }
+    header ul{
+        flex-wrap: wrap;
+    }
+    header ul li{
+        margin: 0 10px;
+    }
+
+}
+/*handling main*/
+main{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(251, 247, 249);
+}
+main .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+main .content h1{
+    font-size: 65px;
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+main .content p{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+main .content h3{
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+main .content h3:hover{
+    background-color: rgb(230, 83, 190);
+}
+main .profile-pic img{
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+}
+@media(max-width:768px){
+    main{
+        flex-direction: column;
+        margin-top: 50px;
+        text-align: center;
+    }
+    main .content{
+        margin-left: 80px;
+    }
+    main .content h1{
+        font-size: 40px;
+    }
+    main .content p{
+        font-size: 20px;
+    }
+    main .profile-pic img{
+        margin-top: 30px;
+        width: 300px;
+        height: 300px;
+    }
+}
+/* Skills CSS */
+section{
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+section{
+ background:linear-gradient(rgba(17, 17, 17, 0.7),rgba(8, 8, 8, 0.7)),url("https://static.vecteezy.com/system/resources/previews/022/270/209/large_2x/3d-illustration-of-blue-and-purple-futuristic-sci-fi-techno-lights-cool-background-generative-ai-free-photo.jpeg");
+
+ width: 100%;
+ height: 75vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+
+
+section h1{
+    color: white;
+    font-size: 35px;
+}
+.inner-skills{
+    margin-top: 40px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.inner-skills .skill p{
+    color: white;
+    font-size: 18px;
+}
+.skill{
+    width:100px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    margin: 50px;
+    margin-top: 10px;
+    background-color: rgba(243, 233, 233, 0.356);
+    backdrop-filter: blur(10px);
+    border-radius: 10px 20px;
+}
+
+.skill img{
+    width: 100px;
+}
+/* About CSS */
+.about{
+    color: white;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.inner-about{
+   
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner-about img{
+    width: 350px;
+    height: 300px;
+}
+.about{
+    background:linear-gradient(rgba(17, 17, 17, 0.7),rgba(8, 8, 8, 0.7)),url("https://wallpapers.com/images/hd/pink-and-black-glitter-aesthetic-buqnv9f1zjqvik6u.jpg");
+    height: 75vh;
+    
+   
+   }
+   
+.paras{
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.inner-about .paras p{
+    padding: 5px;
+   line-height: 20px;
+   max-width: 800px;
+  margin: 0 auto;
+}
+/*Contact CSS */
+@media(max-width:768px){
+    .contact{
+        width:300px;
+        margin-left: 100px;
+        height: 500px;
+        margin-bottom: 150px;
+    }
+    .contact form{
+        max-width: 250px;
+        height: 500px;
+       
+    }
+    form input{
+        width: 100px;
+        height: 10px;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 5px;
+    }
+    form input[type="submit"]{
+        width: 100px;
+        height: 60px;
+        background-color: green;
+        color: aliceblue;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+    }
+}
+.contact{
+    height: 70vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact form{
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+.contact { 
+    background:linear-gradient(rgba(17, 17, 17, 0.7),rgba(8, 8, 8, 0.7)),url("https://cdn.pixabay.com/photo/2022/04/04/16/23/technology-7111752_1280.jpg");
+   background-repeat: no-repeat;
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   
+   }
+form input{
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+form input[type="submit"]{
+    width: 200px;
+    height: 60px;
+    background-color: green;
+    color: aliceblue;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+}
+/* Footer CSS */
+@media(max-width:768px){
+    footer .footer-content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer-content .footer-logo img{
+        width: 100px;
+        margin-left: 20px;
+    }
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 80px 20px;
+}
+footer .footer-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+footer .footer-content .footer-logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+footer .footer-content .footer-logo img{
+    width: 100px;
+  
+}
+footer .footer-content .footer-logo h3{
+    padding: 15px -2px;
+     
+    color: rgb(247, 247, 249);
+}
+footer .footer-content ul li{
+    line-height: 27px;
+    cursor: pointer;
+}
+footer .footer-content ul li:hover{
+    color: rgb(232, 83, 165);
+}
+footer .social-media{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+footer .social-media .fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  height: 10x;
+  border-radius: 100%;
+  text-align: center;
+  text-decoration: none;
+  margin: 20px 15px;
+  background-color: grey;
+  color: white;
+}
+footer .social-media .fa:hover{
+  background-color: white;
+  color: black;
+}
+@keyframes appear {
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1.0;
+    }
+}
+
+.block{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0;
+}
+.connect{
+    height:10px ;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
